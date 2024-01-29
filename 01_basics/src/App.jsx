@@ -1,10 +1,9 @@
 import Chai from "./Chai"
 
 function App() {
-
-
   return (
-   <Chai/>
+    Chai()// We call chai component like function because behind the scences it is also js
+  //  <Chai/>  jsx style-it converts to above style by bundler
   )
 }
 
