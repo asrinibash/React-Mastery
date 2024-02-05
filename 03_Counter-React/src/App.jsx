@@ -8,6 +8,9 @@ function App() {
   const addValue = function () {
     if (counter < 20) {
       counter++;
+      setCounter(counter);          //*** Interview Question-> whats the output -> out put same because :
+      setCounter(counter);          // react algorithm make batches to the no. of requests hence there are same requests so they are run once 
+      setCounter(counter);          // for one click and make maxnumber changes we cause " setCounter(prevCounter=>prevCounter+1)-> we can use diifferent variable name "
       setCounter(counter);
     } else {
       console.log("Limit Exceeds");
