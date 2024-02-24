@@ -20,7 +20,7 @@ function App() {
   };
 
   const convert = () => {
-    setConvertedAmount(amount * convertedAmount[to]);
+    setConvertedAmount(amount * currenyInfo[to]);
   };
 
   return (
@@ -63,7 +63,7 @@ function App() {
                 amount={convertedAmount}
                 currencyOptions={options}
                 onCurrencyChange={(currency) => setTo(currency)}
-                selectCurrency={to}
+                selectCurrency={from}
                 amountDisable
               />
             </div>
