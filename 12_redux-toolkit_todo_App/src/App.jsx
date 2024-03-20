@@ -1,16 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import AddTodo from "./components/AddTodo";
+import Todo from "./components/Todo";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1>Learn about redux toolkit</h1>
+      <h1 className="text-gray-400 text-3xl">Learn about redux toolkit</h1>
+      <AddTodo />
+      <Todo />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
